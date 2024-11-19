@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+
+
+// Pedindo o nome do usuário
+let nomeUsuario = prompt("Qual é o seu nome?");
+
+// Exibindo uma mensagem personalizada
+alert("Olá, " + nomeUsuario + "! Seja bem-vindo ao JavaScript!");
+console.log("O usuário digitou o nome:", nomeUsuario);
+
+// Guardando dois números
+let numero1 = prompt("Qual é o numero 1?");
+let numero2 = prompt("Qual é o numero 2?");
+
+// Convertendo os valores para números
+numero1 = Number(numero1);
+numero2 = Number(numero2);
+
+// Calculando a soma
+let soma = numero1 + numero2;
+
+// Exibindo o resultado
+alert("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+console.log("Resultado da soma:", soma);
+
+
+let anonasc = prompt("Qual ano você nasceu?")
+let anoatual = prompt("Qual ano estamos?")
+
+anonasc = Number(anonasc);
+anoatual = Number(anoatual);
+
+let menos = anoatual - anonasc;
+
+alert("O " + nomeUsuario + " tem " + menos + " anos");
+console.log("Idade do usuário: " + menos);
+
+let sorvetes = prompt("Quantos sorvetes você quer comprar?");
+let valor = prompt("Qual o valor deles?");
+
+sorvetes = Number(sorvetes);
+valor = Number(valor);
+
+let preco = sorvetes * valor;
+
+alert("O valor ficou em " + preco + " reais");
+console.log("Valor da compra: " + preco);
+
+let secreto = Math.floor((Math.random() * 20) + 1);
+let numEscolhido = prompt("Escolha um número de 0 à 20");    
+
+alert("Você escolheu o número: " + numEscolhido + ", e o número secreto é: " + secreto);
+
+let numero3 = prompt("Escolha um número");
+let numero4 = prompt("Escolha outro número");
+
+alert("Você escolheu os números: " + numero3 + " e " + numero4);
+
+
+let conta = prompt("Qual o valor da conta?");
+let gorjeta = prompt("Quantos porcento você quer dar de gorjeta?");
+
+conta = Number(conta);
+gorjeta = Number(gorjeta);
+
+let porcento = conta * gorjeta / 100;
+let total = porcento + conta;
+
+alert("O valor da gorjeta será de " + porcento + " reais. A conta custará no total " + total + " reais");
+
+let numero5 = prompt("Escolha um número");
+let numero6 = prompt("Escolha outro número");
+
+numero5 = Number(numero5);
+numero6 = Number(numero6);
+
+let multiplicacao = numero5 * numero6;
+
+alert("O resultado da multiplicação é " + multiplicacao);
+
+
+let nome = prompt("Qual seu nome?");
+let atualAno = prompt("Em que ano estamos?");
+let addAnos = prompt("Quantos anos pro futuro você quer ir?");
+
+atualAno = Number(atualAno);
+addAnos = Number(addAnos);
+
+let futuro = atualAno + addAnos;
+
+alert("Agora estamos em " + futuro );
+
+
+let nota = prompt("Qual nota você dá ao programa?");
+
+alert("Sua nota dada foi " + nota);
+
+
+let produto = prompt("Qual produto você quer comprar?") ; 
+let quantidade = prompt("Quantos você quer comprar?"); 
+let valorProduto = prompt("Quanto custa cada " + produto + " ?"); 
+
+let valorTotal = Number(quantidade) * Number(valorProduto) ; 
+
+alert(`Você comprou ${quantidade} quantidades de ${produto}, totalizando R$ ${valorTotal.toFixed(2)}` ) ; 
+console.log("Produto: " + produto); 
+console.log("Quantidade do produto: " + quantidade) ; 
+console.log("Valor do produto: " + valorProduto);
+
+
+let materia = prompt("Qual a matéria?");
+let nota1 = prompt("Me fale a nota de sua primeira prova");
+let nota2 = prompt("Me fale a nota de sua segunda prova");
+let nota3 = prompt("Me fale a nota de sua terceira prova");
+
+let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3;
+
+alert(`Sua média em ${materia} foi ${media}`)
+    </script>
+
+</body>
+<script src="script.js"></script>
+</html>
